@@ -1,0 +1,69 @@
+2025-04-09 04:17:21 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak14@gmail.com
+2025-04-09 04:17:26 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak14@gmail.com
+2025-04-09 04:23:06 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak15@gmail.com
+2025-04-09 04:23:09 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak15@gmail.com
+2025-04-09 04:30:35 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak17@gmail.com
+2025-04-09 04:30:39 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak17@gmail.com
+2025-04-09 05:58:45 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak2001@gmail.com
+2025-04-09 05:58:49 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak2001@gmail.com
+2025-04-09 06:10:43 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak2009@gmail.com
+2025-04-09 06:10:47 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak2009@gmail.com
+2025-04-09 07:44:31 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak2005@gmail.com
+2025-04-09 07:44:36 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak2005@gmail.com
+2025-04-09 09:31:34 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak3333@gmail.com
+2025-04-09 09:31:38 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak3333@gmail.com
+2025-04-09 09:33:31 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak4444@gmail.com
+2025-04-09 09:33:35 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak4444@gmail.com
+2025-04-09 09:34:04 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak5555@gmail.com
+2025-04-09 09:34:08 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak5555@gmail.com
+2025-04-09 09:34:10 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak6666@gmail.com
+2025-04-09 09:34:14 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak6666@gmail.com
+2025-04-09 09:51:00 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak6667@gmail.com
+2025-04-09 09:51:04 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak6667@gmail.com
+2025-04-09 11:12:21 INFO  c.e.n.s.config.NotificationListener - Received email message: deorepushpak6669@gmail.com
+2025-04-09 11:12:28 INFO  c.e.n.s.config.NotificationListener - Email sent successfully to deorepushpak6669@gmail.com
+2025-04-09 13:44:38 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@6cb487f6: tags=[[amq.ctag-fmJijdMfSVFGGGNIbtrb9A]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@10.89.1.3:5672/,1), conn: Proxy@263c1c50 Shared Rabbit Connection: SimpleConnection@5ec4e994 [delegate=amqp://guest@10.89.1.3:5672/, localPort=45024], acknowledgeMode=AUTO local queue size=0
+2025-04-09 13:44:38 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+2025-04-09 13:44:38 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:632)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1484)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2268)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1972)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1936)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1483)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1324)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:678)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:647)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:593)
+	... 15 common frames omitted
+2025-04-09 13:44:38 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+2025-04-09 13:44:43 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2025-04-09 13:44:43 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@e91e13b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-04-09 13:44:43 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+2025-04-09 13:45:19 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2025-04-09 13:45:19 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+2025-04-09 13:45:19 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-04-09 13:45:19 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-04-09 13:45:19 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-09 13:45:19 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
